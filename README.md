@@ -1,7 +1,7 @@
 
 # Codeize's Discord Bot Template
 
-![Norden Banner](https://cdn.discordapp.com/attachments/1081331606775676998/1081331613595619328/PFP_Banner.png)
+![Codeize Banner](https://cdn.discordapp.com/attachments/1081331606775676998/1081331613595619328/PFP_Banner.png)
 
 This is a monorepo template for advanced Discord bots.
 > **Note**
@@ -10,6 +10,34 @@ This is a monorepo template for advanced Discord bots.
 ## Demo
 
 TODO: Insert gif or link to demo
+
+## Setup
+
+1. Clone the repo
+
+    ```bash
+    git clone https://github.com/Codeize/template.git
+    ```
+
+2. Install dependencies
+
+    ```bash
+    pnpm install
+    ```
+
+3. Create and fill in a `.env` file as per the example dataset provided in `.env.example`.
+
+4. Sync the database
+
+    ```bash
+    pnpm db:push
+    ```
+
+5. Start the bot
+
+```bash
+pnpm dev
+```
 
 ## Used By
 
