@@ -35,9 +35,9 @@ TODO: Insert gif or link to demo
 
 5. Start the bot
 
-```bash
-pnpm dev
-```
+    ```bash
+    pnpm dev
+    ```
 
 ## Used By
 
