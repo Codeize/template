@@ -1,6 +1,8 @@
 
 # Codeize's Discord Bot Template
 
+![Norden Banner](https://cdn.discordapp.com/attachments/1081331606775676998/1081331613595619328/PFP_Banner.png)
+
 This is a monorepo template for advanced Discord bots.
 > **Note**
 > This template requires at least an intermediate understanding of TypeScript, Prisma/MySQL and the Discord API, and you'll need to familiarize yourself with the concepts of a monorepo. You'll find things very hard if you don't follow the above.
@@ -19,6 +21,12 @@ Here are some bots that use this template, or a modified version of it:
 ## Roadmap
 
 - [ ] Prometheus & Grafana Support
+- [ ] Docker Support
+- [ ] Better Documentation
+- [ ] Demo Video
+- [ ] Admin Panel
+- [ ] Dasboard
+- [ ] Marketing Website
 
 ## Contributing
 
