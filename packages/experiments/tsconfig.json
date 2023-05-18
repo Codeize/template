@@ -1,0 +1,9 @@
+{
+    "extends": "tsconfig/bot.json",
+    "include": ["**/*.ts"],
+    "exclude": ["dist", "node_modules"],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "esModuleInterop": true
+    }
+}

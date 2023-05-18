@@ -1,0 +1,23 @@
+{
+    "name": "@template/i18n",
+    "private": true,
+    "main": "./dist/index.js",
+    "typings": "./index.ts",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint . --ext .ts --fix",
+        "build": "tsc",
+        "dev": "tsc -w",
+        "clean": "rimraf dist"
+    },
+    "dependencies": {
+		"@template/functions": "workspace:*",
+		"@template/logger": "workspace:*",
+        "discord.js": "^14.7.1",
+        "language-name-map": "^0.3.0"
+    },
+    "devDependencies": {
+        "@types/language-name-map": "^0.3.0",
+        "tsconfig": "workspace:*"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "extends": "tsconfig/bot.json",
+    "include": ["./src"],
+    "compilerOptions": {
+        "outDir": "./dist"
+    }
+}

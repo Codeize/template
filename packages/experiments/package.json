@@ -1,0 +1,20 @@
+{
+    "name": "@template/experiments",
+    "private": true,
+    "main": "./dist/index.js",
+    "typings": "./index.ts",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint . --ext .ts --fix",
+        "build": "tsc",
+        "dev": "tsc -w",
+        "clean": "rimraf dist"
+    },
+    "dependencies": {
+        "@template/database": "workspace:*",
+        "murmurhash": "^2.0.1"
+    },
+    "devDependencies": {
+        "tsconfig": "workspace:*"
+    }
+}

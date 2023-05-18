@@ -1,0 +1,20 @@
+{
+	"name": "@template/validator",
+	"version": "1.0.0-ptb",
+	"private": true,
+	"main": "./dist/index.js",
+	"typings": "./index.ts",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint . --ext .ts --fix",
+		"build": "tsc",
+		"dev": "tsc",
+		"clean": "rimraf dist"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*"
+	},
+	"dependencies": {
+		"@sapphire/result": "^2.6.4"
+	}
+}

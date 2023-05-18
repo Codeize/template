@@ -1,0 +1,24 @@
+{
+    "name": "@template/functions",
+    "private": true,
+    "main": "./dist/index.js",
+    "typings": "./index.ts",
+    "type": "module",
+    "scripts": {
+        "lint": "eslint . --ext .ts --fix",
+        "build": "tsc",
+        "dev": "tsc -w",
+        "clean": "rimraf dist"
+    },
+    "dependencies": {
+        "@template/config": "workspace:*",
+        "@template/database": "workspace:*",
+        "@template/logger": "workspace:*",
+        "discord.js": "^14.7.1",
+        "next-api-route-middleware": "^1.0.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.11.19",
+        "tsconfig": "workspace:*"
+    }
+}

@@ -1,0 +1,32 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"pipeline": {
+		"build": {
+			"dependsOn": ["^db:generate", "^build"],
+			"outputs": ["dist/**", ".next/**"],
+			"env": ["DATABASE_URL"]
+		},
+		"clean": {
+			"cache": false
+		},
+		"dev": {
+			"dependsOn": ["^db:generate"],
+			"outputs": ["dist/**", ".next/**"],
+			"persistent": true
+		},
+		"db:generate": {
+			"cache": false
+		},
+		"db:push": {
+			"cache": false
+		},
+		"db:studio": {},
+		"lint": {
+			"cache": false
+		},
+		"start": {
+			"outputs": ["dist/**", ".next/**"],
+			"persistent": true
+		}
+	}
+}

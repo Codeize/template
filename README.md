@@ -49,12 +49,17 @@ Here are some bots that use this template, or a modified version of it:
 ## Roadmap
 
 - [ ] Prometheus & Grafana Support
+- [ ] Website
+- [ ] Internal API
+- [ ] Vote Handler
 - [ ] Docker Support
 - [ ] Better Documentation
 - [ ] Demo Video
 - [ ] Admin Panel
-- [ ] Dasboard
+- [ ] Dashboard
 - [ ] Marketing Website
+- [ ] More API Route Examples
+- [ ] API Rate Limiting
 
 ## Contributing
 
@@ -64,7 +69,7 @@ If you have a suggestion or spot a  bug feel free to open an issue and I'll get 
 
 ## Acknowledgements
 
-- [Shadow](https://github.com/thewilloftheshadow) for many discussions on how initial the initial template by Polar could be improved, aswell as some code snippets here and there.
+- [Shadow](https://github.com/thewilloftheshadow) for many discussions on how initial the initial template by Polar could be improved, aswell as help with the code along the way.
 - [Polar](https://github.com/xPolar) at [OtterDevelopment](https://github.com/OtterDevelopment) for creating [the initial version of this template](https://github.com/OtterDevelopment/typescript-discord-boilerplate).
 
 ## Support

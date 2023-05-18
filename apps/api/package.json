@@ -1,0 +1,31 @@
+{
+	"name": "api",
+	"private": true,
+	"main": "dist/src/index.js",
+	"type": "module",
+	"scripts": {
+		"dev": "pnpm run clean && cross-env NODE_ENV=development tsc-watch --onSuccess \"node .\"",
+		"build": "pnpm run clean && tsc -b",
+		"start": "cross-env NODE_ENV=production node .",
+		"lint": "eslint . --ext .ts --fix",
+		"clean": "rimraf dist"
+	},
+	"dependencies": {
+		"@fastify/cors": "^8.2.1",
+		"@fastify/swagger": "^8.3.1",
+		"@fastify/swagger-ui": "^1.8.1",
+		"@template/config": "workspace:*",
+		"@template/database": "workspace:*",
+		"@template/functions": "workspace:*",
+		"@template/logger": "workspace:*",
+		"@template/validator": "workspace:*",
+		"@upstash/ratelimit": "^0.4.2",
+		"@upstash/redis": "^1.20.6",
+		"fastify": "^4.17.0",
+		"fastify-metrics": "^10.3.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.16.4",
+		"tsconfig": "workspace:*"
+	}
+}

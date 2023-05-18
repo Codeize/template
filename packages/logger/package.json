@@ -1,0 +1,19 @@
+{
+	"name": "@template/logger",
+	"private": true,
+	"main": "./dist/index.js",
+	"typings": "./index.ts",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint . --ext .ts --fix",
+		"build": "tsc",
+		"dev": "tsc -w",
+		"clean": "rimraf dist"
+	},
+	"dependencies": {
+		"winston": "^3.8.2"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*"
+	}
+}

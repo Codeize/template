@@ -1,0 +1,22 @@
+{
+	"name": "@template/premium",
+	"private": true,
+	"main": "./dist/index.js",
+	"typings": "./index.ts",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint . --ext .ts --fix",
+		"build": "tsc",
+		"dev": "tsc -w",
+		"clean": "rimraf dist"
+	},
+	"dependencies": {
+		"@template/database": "workspace:*",
+		"@template/functions": "workspace:*",
+		"@template/logger": "workspace:*",
+		"chargebee": "^2.18.0"
+	},
+	"devDependencies": {
+		"tsconfig": "workspace:*"
+	}
+}
