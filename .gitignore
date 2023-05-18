@@ -33,7 +33,7 @@ yarn-error.log*
 .turbo
 
 # env
-.env*
+.env
 !packages/database/.env
 
 # typescript
