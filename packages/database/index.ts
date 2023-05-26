@@ -1,13 +1,13 @@
 import { PrismaClient } from "@prisma/client"
+import Database from "./src/db"
 
-const database = new PrismaClient()
+const prismaDb = new PrismaClient()
 
-export default database
+export default prismaDb
 
 export * from "@prisma/client"
 
-export * from "./src/getData.js"
-export * from "./src/factoryReset.js"
+export const database = new Database(prismaDb)
 
 export enum ApiPermission {
 	Levels = 1 << 0,
