@@ -19,10 +19,11 @@
 		"@template/i18n": "workspace:*",
 		"@template/lib": "workspace:*",
 		"@template/logger": "workspace:*",
+		"@template/metrics": "workspace:*",
 		"@template/premium": "workspace:*",
 		"amaribot.js": "^2.0.1",
 		"croner": "^5.6.0",
-		"discord.js": "^14.7.1",
+		"discord.js": "^14.11.0",
 		"mee6-levels-api": "^1.3.1"
 	},
 	"devDependencies": {

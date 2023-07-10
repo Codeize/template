@@ -12,7 +12,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^18.11.19",
-		"discord.js": "^14.7.1",
+		"discord.js": "^14.11.0",
 		"tsconfig": "workspace:*"
 	}
 }

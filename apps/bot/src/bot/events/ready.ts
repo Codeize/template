@@ -3,6 +3,7 @@ import { getFiles } from "@template/functions"
 import { BetterClient, EventHandler } from "@template/lib"
 import { logger } from "@template/logger"
 import path from "path"
+import { updateClientStats, updatePing } from "@template/metrics"
 
 export default class Ready extends EventHandler {
 	override async run() {
@@ -20,6 +21,7 @@ export default class Ready extends EventHandler {
 		logger.info(`Logged in as ${this.client.user?.tag} [${this.client.user?.id}] with ${this.client.shard?.count} shards.`) // with ${stats.guilds} guilds and ${stats.users} users.`)
 
 		loadAndStartCrons(this.client)
+		updatePing(this.client)
 
 		if (process.env.NODE_ENV === "development") {
 			this.client.guilds.cache.forEach(async (x) => {
@@ -37,6 +39,8 @@ export default class Ready extends EventHandler {
 				})
 			})
 		}
+
+		updateClientStats(this.client)
 	}
 }
 

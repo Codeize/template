@@ -2,6 +2,7 @@ import { EventHandler } from "@template/lib"
 import { logger } from "@template/logger"
 import db from "@template/database"
 import { Guild } from "discord.js"
+import { updateClientStats } from "@template/metrics"
 
 export default class GuildCreate extends EventHandler {
 	override async run(guild: Guild) {
@@ -19,5 +20,7 @@ export default class GuildCreate extends EventHandler {
 				name: guild.name,
 			},
 		})
+
+		updateClientStats(this.client)
 	}
 }

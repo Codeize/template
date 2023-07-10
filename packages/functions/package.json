@@ -14,7 +14,7 @@
         "@template/config": "workspace:*",
         "@template/database": "workspace:*",
         "@template/logger": "workspace:*",
-        "discord.js": "^14.7.1",
+        "discord.js": "^14.11.0",
         "next-api-route-middleware": "^1.0.2"
     },
     "devDependencies": {

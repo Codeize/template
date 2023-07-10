@@ -11,9 +11,9 @@
         "clean": "rimraf dist"
     },
     "dependencies": {
-		"@template/functions": "workspace:*",
-		"@template/logger": "workspace:*",
-        "discord.js": "^14.7.1",
+        "@template/functions": "workspace:*",
+        "@template/logger": "workspace:*",
+        "discord.js": "^14.11.0",
         "language-name-map": "^0.3.0"
     },
     "devDependencies": {

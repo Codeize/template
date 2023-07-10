@@ -2,6 +2,7 @@ import { BetterClient, HandlerType, ApplicationCommand, Button, Dropdown, _BaseC
 import { AnySelectMenuInteraction, ButtonInteraction, CommandInteraction, Message } from "discord.js"
 import { logger, DebugType } from "@template/logger"
 import { generateErrorMessage, getFiles } from "@template/functions"
+import { commandTriggered } from "@template/metrics"
 import path from "path"
 
 export default class BaseHandler {
@@ -105,6 +106,7 @@ export default class BaseHandler {
 				}`,
 				DebugType.COMMAND
 			)
+			commandTriggered({ command: component.key, userId: interaction.user.id, guildId: interaction.guildId })
 		} else {
 			logger.debug(`${interaction.user.tag} [${interaction.user.id}] used ${this.type}: \`${interaction.customId}\``, DebugType.COMMAND)
 		}

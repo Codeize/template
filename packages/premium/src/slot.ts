@@ -1,4 +1,5 @@
 import database, { Guild, PremiumGuildSlot } from "@template/database"
+import { Guild, PremiumGuildSlot } from "@prisma/client"
 import { generateTimestamp } from "@template/functions"
 
 export const activateSlot = async (slotId: string, guildId: string): Promise<PremiumGuildSlot | null> => {
